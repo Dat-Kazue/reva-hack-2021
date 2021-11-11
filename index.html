@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        #map {
+            margin: auto;
+            height: 500px;
+            width: 60%;
+            overflow: visible;
+            
+        }
+    </style>
+        <title>Crime Tracking </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="/images/logo.jpg"></a>
+            <div class="navigator">
+                <ul>
+                    <li>
+                        <a href="">Home<a href="">Past Record<a href="#about">About Us</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main body">
+            <h1 class="heading">LIVE <br> Tracking <br> Crime</h1>
+
+        </div> 
+        <br><br><br><br><br><br>   
+
+
+
+
+
+        <div id="map">
+
+        </div>
+        <br><br><br><br>
+
+
+
+    </section>
+
+    <section class="header1">
+        <div>
+            <h1 id="about"> About Us </h1>
+        </div>
+
+    </section>
+
+
+   
+    <script>
+        function initMap() {
+            var  location = {lat:77.571198  , lng : 13.107568 }
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8,
+                centre: location,
+            });
+        }
+
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.00key=AIzaSyCY_INfbe0uA4hrCUZIF-lQeE642hMyi1E&callback=initMap">
+
+    </script>
+
+</body> 
+</html>

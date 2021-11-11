@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Arvo', serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(/images/banner.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header1 {
+    background-color: blueviolet;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigator{
+    flex: 1;
+    text-align: right;
+
+}
+
+.navigator ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 44px 1xx2px;
+    position: relative;
+}
+
+.navigator ul li a{
+    color: rgb(16, 189, 212);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.navigator ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(18, 245, 169); 
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.navigator ul li a:hover::after{
+    width: 100%
+}
+
+.heading {
+    color: rgb(16, 189, 212);
+    text-align: center;
+    font-size: 130px;
+}
